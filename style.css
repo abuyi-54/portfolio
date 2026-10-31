@@ -1,0 +1,291 @@
+\*baisc page settings*/
+
+
+* {
+box-sizing: border-box;    
+    
+}
+
+body {
+
+    margin:0;
+    font-family: arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+
+}
+\*  main heading */
+
+
+h1 {
+color: #2563eb;
+text-align: center;
+margin-top: 40px;
+
+
+}
+
+h2 {
+
+    color: #0f172a;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+
+}
+body > h2,
+body > p {
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 20px;
+padding-right: 20px;
+
+
+}
+
+p {
+    font-size: 16px;
+
+}
+nav{
+    background-color: #0f172a;
+    padding: 20px;
+    text-align: center;
+}
+nav a{
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 15px;
+
+}
+nav a:hover{
+
+    color: #38bdf8;
+}
+.hero{
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+.hero p{
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+.hero-button{
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+
+    font-weight: bold;
+
+}
+.hero-button:hover{
+    background-color: #1d4ed8;
+}
+
+.about{
+    background-color: lightblue;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    color: black;
+
+
+    
+
+
+}
+.about h2{
+    color: black;
+    margin-top: 0;
+
+}
+.about p{
+    color: darkslategray;
+    font-size: 18px;
+     line-height: 1.8;
+}
+.skills{
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+.skills h2{
+    color: blue;
+    margin-bottom: 30px;
+
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+}
+.skill{
+    background-color: white;
+    padding: 25px;
+    width:220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px lightgray;
+    transition: transform 0.3s;
+
+
+}
+.skill h3{
+    color: #2563eb;
+    margin-top: 0;
+
+
+
+}
+.skill p{
+    color: #475569;
+    font-size: 16px;
+
+
+    .skill:hover{
+        transform:translateY(-5px);
+    }
+}/* Projects section */
+.projects {
+    background-color: whitesmoke;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Projects heading */
+.projects h2 {
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+/* Projects container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual project cards */
+.projects-card {
+    background-color: lightgray;
+    padding: 25px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px lightgray;
+    transition: transform 0.3s;
+
+}
+.projects-card:hover{
+
+    transform:translateY(-5px);
+}
+
+/* Project titles */
+.project-card h3 {
+    color: blue;
+    margin-top: 0;
+}
+
+/* Project descriptions */
+.project-card p {
+    color: black;
+    font-size: 15px;
+}
+/* Contact section */
+.contact {
+    background-color: lightgray;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Contact heading */
+.contact h2 {
+    color: darkblue;
+    margin-bottom: 25px;
+}
+
+/* Contact paragraphs */
+.contact p {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* Contact links */
+.contact a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contact link hover */
+.contact a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+
+    nav {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .about {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
